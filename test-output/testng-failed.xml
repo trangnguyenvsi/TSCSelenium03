@@ -10,17 +10,13 @@
     <classes>
       <class name="com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest">
         <methods>
-          <include name="beforeTest"/>
           <include name="afterMethod"/>
-          <include name="afterTest"/>
           <include name="checkFindFlight" invocation-numbers="0"/>
-          <include name="checkLogin" invocation-numbers="0"/>
-          <include name="beforeSuite"/>
-          <include name="checkBookFlight" invocation-numbers="0"/>
+          <include name="checkLogin" invocation-numbers="0 1 2"/>
+          <include name="checkBookFlight" invocation-numbers="0 1"/>
           <include name="testSetup"/>
           <include name="afterClass"/>
           <include name="checkRegister" invocation-numbers="0"/>
-          <include name="afterSuite"/>
           <include name="beforeMethod"/>
         </methods>
       </class> <!-- com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest -->
