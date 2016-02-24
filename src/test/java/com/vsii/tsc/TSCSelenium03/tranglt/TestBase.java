@@ -1,9 +1,21 @@
 package com.vsii.tsc.TSCSelenium03.tranglt;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
-
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.poifs.filesystem.POIFSFileSystem;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -12,6 +24,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.DataProvider;
 
 public class TestBase {
 	protected Properties p;
@@ -29,7 +42,6 @@ public class TestBase {
 
 	@BeforeSuite
 	public void beforeClass() throws IOException {
-
 		// Read config file
 		p = Utility.readConfig();
 		String browser = p.getProperty("browserName");
@@ -51,7 +63,7 @@ public class TestBase {
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		}
 	}
-	
+	@Test
 	public void login(String name, String password) {
 		driver.get(urlBase+ "/mercurysignon.php");
 		driver.findElement(By.name("userName")).clear();
@@ -61,6 +73,7 @@ public class TestBase {
 		driver.findElement(By.name("login")).click();
 	}
 	public void flightFinder() {
+
 		login("trang123", "123");
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.findElement(By.xpath(".//*[@type='radio' and @value='oneway']")).click();
@@ -77,6 +90,39 @@ public class TestBase {
 		new Select(driver.findElement(By.name("airline"))).selectByVisibleText("Blue Skies Airlines");
 		driver.findElement(By.name("findFlights")).click();
 	}
+	
+	@DataProvider
+	public Object[][] getData1() {
+		return new Object[][]{{"5", "five"}, {"6", "six"}};
+	}
+	
+	@DataProvider
+	public Object[][] getData() throws IOException{
+		String[][] object = new String[4][2];
+		FileInputStream fileInputStream = new FileInputStream("./Data/data.xls");
+        POIFSFileSystem fsFileSystem = new POIFSFileSystem(fileInputStream);
+        HSSFWorkbook workBook2 = new HSSFWorkbook(fsFileSystem);
+        HSSFSheet sheet = workBook2.getSheetAt(0);
+        Iterator<Row> iterator = sheet.iterator();
+        int i=0;
+        int j=0;
+        while (iterator.hasNext()) {
+        	
+            Row nextRow = iterator.next();
+            Iterator<Cell> cellIterator = nextRow.cellIterator();
+             
+            while (cellIterator.hasNext()) {
+                Cell cell = cellIterator.next();
+                object[i][j]=cell.getStringCellValue();
+                j=j+1;
+                }
+            i=i+1; 
+            j=0;
+            }
+        workBook2.close();
+        return object;
+	}
+
 	
 	@AfterSuite
 	public void tearDown() throws Exception {
