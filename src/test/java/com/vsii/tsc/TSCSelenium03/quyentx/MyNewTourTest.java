@@ -88,8 +88,7 @@ public class MyNewTourTest {
 		    driver.findElement(byRegConfirmPass).sendKeys("password1");
 		    driver.findElement(byRegButton).click();
 		}
-		Assert.assertEquals(driver.getCurrentUrl(), baseURL+"/create_account_success.php");	
-		
+		Assert.assertEquals(driver.getCurrentUrl(), baseURL+"/create_account_success.php");		
 	}
   
   @Test
@@ -232,10 +231,8 @@ public class MyNewTourTest {
 			driver.findElement(byBusinessClass).click();
 			driver.findElement(FindFlightBtn).click();
 		}
-
 		Assert.assertEquals(driver.getCurrentUrl(), baseURL+"/mercuryreservation.php");
-		
-	}
+  }
   
   
   @Test(dataProvider = "book", description = "checkBook")
