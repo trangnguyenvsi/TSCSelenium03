@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="NewTour">
+    <classes>
+      <class name="com.vsii.tsc.TSCSelenium03.quyentx.NewTour"/>
+      <class name="com.vsii.tsc.TSCSelenium03.AppTest"/>
+    </classes>
+  </test> <!-- NewTour -->
+  <test name="NewTour(failed)">
+    <classes>
+      <class name="com.vsii.tsc.TSCSelenium03.quyentx.NewTour">
+        <methods>
+          <include name="checkRegisterValid"/>
+          <include name="checkRegister" invocation-numbers="0"/>
+          <include name="beforeMethod"/>
+          <include name="getBrowser"/>
+          <include name="checkBookFlight" invocation-numbers="0 1"/>
+          <include name="afterClass"/>
+          <include name="checkFindFlight" invocation-numbers="0"/>
+          <include name="checkLogin" invocation-numbers="0 1 2"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.vsii.tsc.TSCSelenium03.quyentx.NewTour -->
+    </classes>
+  </test> <!-- NewTour(failed) -->
+</suite> <!-- Failed suite [Suite] -->

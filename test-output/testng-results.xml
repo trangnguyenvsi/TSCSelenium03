@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="7" total="15" passed="8">
+<testng-results skipped="0" failed="8" total="12" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="114048" started-at="2016-02-24T09:34:03Z" finished-at="2016-02-24T09:35:57Z">
+  <suite name="Suite" duration-ms="97481" started-at="2016-02-26T03:07:55Z" finished-at="2016-02-26T03:09:32Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="114048" started-at="2016-02-24T09:34:03Z" finished-at="2016-02-24T09:35:57Z">
-      <class name="com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest">
-        <test-method status="PASS" signature="testSetup()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest@1464ce8]" test-instance-name="" name="testSetup" is-config="true" duration-ms="6056" started-at="2016-02-24T16:34:03Z" finished-at="2016-02-24T16:34:09Z">
+    <test name="NewTour" duration-ms="97481" started-at="2016-02-26T03:07:55Z" finished-at="2016-02-26T03:09:32Z">
+      <class name="com.vsii.tsc.TSCSelenium03.quyentx.NewTour">
+        <test-method status="PASS" signature="getBrowser()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.NewTour@1d47554]" name="getBrowser" is-config="true" duration-ms="9780" started-at="2016-02-26T10:07:55Z" finished-at="2016-02-26T10:08:05Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSetup -->
-        <test-method name="beforeMethod" test-instance-name="" signature="beforeMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest@1464ce8]" is-config="true" status="PASS" duration-ms="0" finished-at="2016-02-24T16:34:10Z" started-at="2016-02-24T16:34:10Z" description="checkBook">
+        </test-method> <!-- getBrowser -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.NewTour@1d47554]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2016-02-26T10:08:05Z" description="checkBook" finished-at="2016-02-26T10:08:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method name="checkBookFlight" test-instance-name="" signature="checkBookFlight(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest@1464ce8]" status="FAIL" duration-ms="13445" finished-at="2016-02-24T16:34:23Z" started-at="2016-02-24T16:34:10Z" data-provider="book" description="checkBook">
+        <test-method status="FAIL" signature="checkBookFlight(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.NewTour@1d47554]" name="checkBookFlight" duration-ms="13641" started-at="2016-02-26T10:08:05Z" description="checkBook" data-provider="book" finished-at="2016-02-26T10:08:19Z">
           <params>
             <param index="0">
               <value>
@@ -120,7 +120,7 @@
 	at org.testng.Assert.assertEquals(Assert.java:116)
 	at org.testng.Assert.assertEquals(Assert.java:190)
 	at org.testng.Assert.assertEquals(Assert.java:200)
-	at com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest.checkBookFlight(MyNewTourTest.java:285)
+	at com.vsii.tsc.TSCSelenium03.quyentx.NewTour.checkBookFlight(NewTour.java:341)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -151,7 +151,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkBookFlight -->
-        <test-method name="checkBookFlight" test-instance-name="" signature="checkBookFlight(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest@1464ce8]" status="FAIL" duration-ms="16942" finished-at="2016-02-24T16:34:40Z" started-at="2016-02-24T16:34:23Z" data-provider="book" description="checkBook">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.NewTour@1d47554]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2016-02-26T10:08:19Z" description="checkBook" finished-at="2016-02-26T10:08:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.NewTour@1d47554]" name="afterMethod" is-config="true" duration-ms="0" started-at="2016-02-26T10:08:19Z" description="checkBook" finished-at="2016-02-26T10:08:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="FAIL" signature="checkBookFlight(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.NewTour@1d47554]" name="checkBookFlight" duration-ms="14959" started-at="2016-02-26T10:08:19Z" description="checkBook" data-provider="book" finished-at="2016-02-26T10:08:34Z">
           <params>
             <param index="0">
               <value>
@@ -256,7 +264,7 @@
 	at org.testng.Assert.assertEquals(Assert.java:116)
 	at org.testng.Assert.assertEquals(Assert.java:190)
 	at org.testng.Assert.assertEquals(Assert.java:200)
-	at com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest.checkBookFlight(MyNewTourTest.java:285)
+	at com.vsii.tsc.TSCSelenium03.quyentx.NewTour.checkBookFlight(NewTour.java:341)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -287,31 +295,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkBookFlight -->
-        <test-method name="beforeMethod" test-instance-name="" signature="beforeMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest@1464ce8]" is-config="true" status="PASS" duration-ms="0" finished-at="2016-02-24T16:34:23Z" started-at="2016-02-24T16:34:23Z" description="checkBook">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method name="afterMethod" test-instance-name="" signature="afterMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest@1464ce8]" is-config="true" status="PASS" duration-ms="0" finished-at="2016-02-24T16:34:23Z" started-at="2016-02-24T16:34:23Z" description="checkBook">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method name="beforeMethod" test-instance-name="" signature="beforeMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest@1464ce8]" is-config="true" status="PASS" duration-ms="0" finished-at="2016-02-24T16:34:40Z" started-at="2016-02-24T16:34:40Z" description="checkBook">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="checkBookFlightValid()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest@1464ce8]" test-instance-name="" name="checkBookFlightValid" duration-ms="14610" started-at="2016-02-24T16:34:40Z" finished-at="2016-02-24T16:34:55Z">
+        <test-method status="PASS" signature="checkBookFlightValid()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.NewTour@1d47554]" name="checkBookFlightValid" duration-ms="19425" started-at="2016-02-26T10:08:34Z" finished-at="2016-02-26T10:08:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkBookFlightValid -->
-        <test-method name="afterMethod" test-instance-name="" signature="afterMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest@1464ce8]" is-config="true" status="PASS" duration-ms="0" finished-at="2016-02-24T16:34:40Z" started-at="2016-02-24T16:34:40Z" description="checkBook">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.NewTour@1d47554]" name="afterMethod" is-config="true" duration-ms="0" started-at="2016-02-26T10:08:34Z" description="checkBook" finished-at="2016-02-26T10:08:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method name="afterMethod" test-instance-name="" signature="afterMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest@1464ce8]" is-config="true" status="PASS" duration-ms="0" finished-at="2016-02-24T16:34:55Z" started-at="2016-02-24T16:34:55Z" description="checkBook">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.NewTour@1d47554]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2016-02-26T10:08:34Z" description="checkBook" finished-at="2016-02-26T10:08:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.NewTour@1d47554]" name="afterMethod" is-config="true" duration-ms="0" started-at="2016-02-26T10:08:53Z" description="checkBook" finished-at="2016-02-26T10:08:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="FAIL" signature="checkFindFlight(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest@1464ce8]" test-instance-name="" name="checkFindFlight" duration-ms="8030" started-at="2016-02-24T16:34:55Z" data-provider="find" finished-at="2016-02-24T16:35:03Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.NewTour@1d47554]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2016-02-26T10:08:53Z" description="checkBook" finished-at="2016-02-26T10:08:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="checkFindFlight(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.NewTour@1d47554]" name="checkFindFlight" duration-ms="8242" started-at="2016-02-26T10:08:53Z" data-provider="find" finished-at="2016-02-26T10:09:02Z">
           <params>
             <param index="0">
               <value>
@@ -361,7 +365,7 @@
 	at org.testng.Assert.assertEquals(Assert.java:116)
 	at org.testng.Assert.assertEquals(Assert.java:190)
 	at org.testng.Assert.assertEquals(Assert.java:200)
-	at com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest.checkFindFlight(MyNewTourTest.java:232)
+	at com.vsii.tsc.TSCSelenium03.quyentx.NewTour.checkFindFlight(NewTour.java:275)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -392,27 +396,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkFindFlight -->
-        <test-method name="beforeMethod" test-instance-name="" signature="beforeMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest@1464ce8]" is-config="true" status="PASS" duration-ms="0" finished-at="2016-02-24T16:34:55Z" started-at="2016-02-24T16:34:55Z" description="checkBook">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method name="afterMethod" test-instance-name="" signature="afterMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest@1464ce8]" is-config="true" status="PASS" duration-ms="0" finished-at="2016-02-24T16:35:03Z" started-at="2016-02-24T16:35:03Z" description="checkBook">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.NewTour@1d47554]" name="afterMethod" is-config="true" duration-ms="0" started-at="2016-02-26T10:09:02Z" description="checkBook" finished-at="2016-02-26T10:09:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="checkFindFlightValid()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest@1464ce8]" test-instance-name="" name="checkFindFlightValid" duration-ms="8014" started-at="2016-02-24T16:35:03Z" finished-at="2016-02-24T16:35:11Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.NewTour@1d47554]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2016-02-26T10:09:02Z" description="checkBook" finished-at="2016-02-26T10:09:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="checkFindFlightValid()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.NewTour@1d47554]" name="checkFindFlightValid" duration-ms="8088" started-at="2016-02-26T10:09:02Z" finished-at="2016-02-26T10:09:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkFindFlightValid -->
-        <test-method name="beforeMethod" test-instance-name="" signature="beforeMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest@1464ce8]" is-config="true" status="PASS" duration-ms="0" finished-at="2016-02-24T16:35:03Z" started-at="2016-02-24T16:35:03Z" description="checkBook">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method name="afterMethod" test-instance-name="" signature="afterMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest@1464ce8]" is-config="true" status="PASS" duration-ms="0" finished-at="2016-02-24T16:35:11Z" started-at="2016-02-24T16:35:11Z" description="checkBook">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.NewTour@1d47554]" name="afterMethod" is-config="true" duration-ms="4" started-at="2016-02-26T10:09:10Z" description="checkBook" finished-at="2016-02-26T10:09:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="FAIL" signature="checkLogin(java.lang.String, java.lang.String)[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest@1464ce8]" test-instance-name="" name="checkLogin" duration-ms="980" started-at="2016-02-24T16:35:11Z" data-provider="login" finished-at="2016-02-24T16:35:12Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.NewTour@1d47554]" name="beforeMethod" is-config="true" duration-ms="2" started-at="2016-02-26T10:09:10Z" description="checkBook" finished-at="2016-02-26T10:09:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="checkLogin(java.lang.String, java.lang.String)[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.NewTour@1d47554]" name="checkLogin" duration-ms="1157" started-at="2016-02-26T10:09:10Z" data-provider="login" finished-at="2016-02-26T10:09:11Z">
           <params>
             <param index="0">
               <value>
@@ -428,7 +432,7 @@
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-	at com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest.checkLogin(MyNewTourTest.java:51)
+	at com.vsii.tsc.TSCSelenium03.quyentx.NewTour.checkLogin(NewTour.java:58)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -459,19 +463,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkLogin -->
-        <test-method name="beforeMethod" test-instance-name="" signature="beforeMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest@1464ce8]" is-config="true" status="PASS" duration-ms="0" finished-at="2016-02-24T16:35:11Z" started-at="2016-02-24T16:35:11Z" description="checkBook">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.NewTour@1d47554]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2016-02-26T10:09:11Z" description="checkBook" finished-at="2016-02-26T10:09:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method name="afterMethod" test-instance-name="" signature="afterMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest@1464ce8]" is-config="true" status="PASS" duration-ms="0" finished-at="2016-02-24T16:35:12Z" started-at="2016-02-24T16:35:12Z" description="checkBook">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.NewTour@1d47554]" name="afterMethod" is-config="true" duration-ms="0" started-at="2016-02-26T10:09:11Z" description="checkBook" finished-at="2016-02-26T10:09:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method name="beforeMethod" test-instance-name="" signature="beforeMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest@1464ce8]" is-config="true" status="PASS" duration-ms="0" finished-at="2016-02-24T16:35:12Z" started-at="2016-02-24T16:35:12Z" description="checkBook">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="checkLogin(java.lang.String, java.lang.String)[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest@1464ce8]" test-instance-name="" name="checkLogin" duration-ms="902" started-at="2016-02-24T16:35:12Z" data-provider="login" finished-at="2016-02-24T16:35:13Z">
+        <test-method status="FAIL" signature="checkLogin(java.lang.String, java.lang.String)[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.NewTour@1d47554]" name="checkLogin" duration-ms="985" started-at="2016-02-26T10:09:11Z" data-provider="login" finished-at="2016-02-26T10:09:12Z">
           <params>
             <param index="0">
               <value>
@@ -487,7 +487,7 @@
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-	at com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest.checkLogin(MyNewTourTest.java:51)
+	at com.vsii.tsc.TSCSelenium03.quyentx.NewTour.checkLogin(NewTour.java:58)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -518,7 +518,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkLogin -->
-        <test-method status="FAIL" signature="checkLogin(java.lang.String, java.lang.String)[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest@1464ce8]" test-instance-name="" name="checkLogin" duration-ms="852" started-at="2016-02-24T16:35:13Z" data-provider="login" finished-at="2016-02-24T16:35:14Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.NewTour@1d47554]" name="afterMethod" is-config="true" duration-ms="0" started-at="2016-02-26T10:09:12Z" description="checkBook" finished-at="2016-02-26T10:09:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="FAIL" signature="checkLogin(java.lang.String, java.lang.String)[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.NewTour@1d47554]" name="checkLogin" duration-ms="1251" started-at="2016-02-26T10:09:12Z" data-provider="login" finished-at="2016-02-26T10:09:13Z">
           <params>
             <param index="0">
               <value>
@@ -534,7 +538,7 @@
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-	at com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest.checkLogin(MyNewTourTest.java:51)
+	at com.vsii.tsc.TSCSelenium03.quyentx.NewTour.checkLogin(NewTour.java:58)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -565,35 +569,31 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkLogin -->
-        <test-method name="afterMethod" test-instance-name="" signature="afterMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest@1464ce8]" is-config="true" status="PASS" duration-ms="0" finished-at="2016-02-24T16:35:13Z" started-at="2016-02-24T16:35:13Z" description="checkBook">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method name="beforeMethod" test-instance-name="" signature="beforeMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest@1464ce8]" is-config="true" status="PASS" duration-ms="0" finished-at="2016-02-24T16:35:13Z" started-at="2016-02-24T16:35:13Z" description="checkBook">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.NewTour@1d47554]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2016-02-26T10:09:12Z" description="checkBook" finished-at="2016-02-26T10:09:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method name="beforeMethod" test-instance-name="" signature="beforeMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest@1464ce8]" is-config="true" status="PASS" duration-ms="0" finished-at="2016-02-24T16:35:14Z" started-at="2016-02-24T16:35:14Z" description="checkBook">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method name="afterMethod" test-instance-name="" signature="afterMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest@1464ce8]" is-config="true" status="PASS" duration-ms="0" finished-at="2016-02-24T16:35:14Z" started-at="2016-02-24T16:35:14Z" description="checkBook">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="checkLoginValid()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest@1464ce8]" test-instance-name="" name="checkLoginValid" duration-ms="4455" started-at="2016-02-24T16:35:14Z" finished-at="2016-02-24T16:35:18Z">
+        <test-method status="PASS" signature="checkLoginValid()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.NewTour@1d47554]" name="checkLoginValid" duration-ms="4993" started-at="2016-02-26T10:09:13Z" finished-at="2016-02-26T10:09:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkLoginValid -->
-        <test-method name="afterMethod" test-instance-name="" signature="afterMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest@1464ce8]" is-config="true" status="PASS" duration-ms="0" finished-at="2016-02-24T16:35:18Z" started-at="2016-02-24T16:35:18Z" description="checkBook">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.NewTour@1d47554]" name="afterMethod" is-config="true" duration-ms="0" started-at="2016-02-26T10:09:13Z" description="checkBook" finished-at="2016-02-26T10:09:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method name="beforeMethod" test-instance-name="" signature="beforeMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest@1464ce8]" is-config="true" status="PASS" duration-ms="0" finished-at="2016-02-24T16:35:18Z" started-at="2016-02-24T16:35:18Z" description="checkBook">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.NewTour@1d47554]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2016-02-26T10:09:13Z" description="checkBook" finished-at="2016-02-26T10:09:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="checkRegister(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest@1464ce8]" test-instance-name="" name="checkRegister" duration-ms="4214" started-at="2016-02-24T16:35:18Z" data-provider="reg" finished-at="2016-02-24T16:35:22Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.NewTour@1d47554]" name="afterMethod" is-config="true" duration-ms="0" started-at="2016-02-26T10:09:18Z" description="checkBook" finished-at="2016-02-26T10:09:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.NewTour@1d47554]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2016-02-26T10:09:18Z" description="checkBook" finished-at="2016-02-26T10:09:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="checkRegister(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.NewTour@1d47554]" name="checkRegister" duration-ms="2165" started-at="2016-02-26T10:09:18Z" data-provider="reg" finished-at="2016-02-26T10:09:20Z">
           <params>
             <param index="0">
               <value>
@@ -656,19 +656,34 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[expected [http://newtours.demoaut.com/mercuryregister.php] but found [http://newtours.demoaut.com/create_account_success.php]]]>
+              <![CDATA[Element must be user-editable in order to clear it.
+Command duration or timeout: 37 milliseconds
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'quyentx-w7', ip: '192.168.0.38', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=44.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 9004691a-623d-47f8-93f1-5e459303ff5e]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [http://newtours.demoaut.com/mercuryregister.php] but found [http://newtours.demoaut.com/create_account_success.php]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
-	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:190)
-	at org.testng.Assert.assertEquals(Assert.java:200)
-	at com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest.checkRegister(MyNewTourTest.java:184)
+              <![CDATA[org.openqa.selenium.WebDriverException: Element must be user-editable in order to clear it.
+Command duration or timeout: 37 milliseconds
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'quyentx-w7', ip: '192.168.0.38', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=44.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 9004691a-623d-47f8-93f1-5e459303ff5e
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:140)
+	at com.vsii.tsc.TSCSelenium03.quyentx.NewTour.checkRegister(NewTour.java:218)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -693,81 +708,120 @@
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+Caused by: org.openqa.selenium.WebDriverException: Element must be user-editable in order to clear it.
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'quyentx-w7', ip: '192.168.0.38', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: driver.version: unknown
+	at <anonymous class>.bot.Error(file:///C:/Users/quyentx/AppData/Local/Temp/anonymous6954286156838467855webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:679)
+	at <anonymous class>.bot.action.clear(file:///C:/Users/quyentx/AppData/Local/Temp/anonymous6954286156838467855webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11638)
+	at <anonymous class>.WebElement.clearElement(file:///C:/Users/quyentx/AppData/Local/Temp/anonymous6954286156838467855webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12089)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/quyentx/AppData/Local/Temp/anonymous6954286156838467855webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12614)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/quyentx/AppData/Local/Temp/anonymous6954286156838467855webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12619)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/quyentx/AppData/Local/Temp/anonymous6954286156838467855webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12561)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkRegister -->
-        <test-method name="afterMethod" test-instance-name="" signature="afterMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest@1464ce8]" is-config="true" status="PASS" duration-ms="0" finished-at="2016-02-24T16:35:22Z" started-at="2016-02-24T16:35:22Z" description="checkBook">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method name="beforeMethod" test-instance-name="" signature="beforeMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest@1464ce8]" is-config="true" status="PASS" duration-ms="0" finished-at="2016-02-24T16:35:22Z" started-at="2016-02-24T16:35:22Z" description="checkBook">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.NewTour@1d47554]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2016-02-26T10:09:20Z" description="checkBook" finished-at="2016-02-26T10:09:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="checkRegisterValid()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest@1464ce8]" test-instance-name="" name="checkRegisterValid" duration-ms="4202" started-at="2016-02-24T16:35:22Z" finished-at="2016-02-24T16:35:27Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.NewTour@1d47554]" name="afterMethod" is-config="true" duration-ms="0" started-at="2016-02-26T10:09:20Z" description="checkBook" finished-at="2016-02-26T10:09:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="FAIL" signature="checkRegisterValid()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.NewTour@1d47554]" name="checkRegisterValid" duration-ms="2137" started-at="2016-02-26T10:09:20Z" finished-at="2016-02-26T10:09:22Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Element must be user-editable in order to clear it.
+Command duration or timeout: 56 milliseconds
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'quyentx-w7', ip: '192.168.0.38', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=44.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 9004691a-623d-47f8-93f1-5e459303ff5e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Element must be user-editable in order to clear it.
+Command duration or timeout: 56 milliseconds
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'quyentx-w7', ip: '192.168.0.38', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=44.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 9004691a-623d-47f8-93f1-5e459303ff5e
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:140)
+	at com.vsii.tsc.TSCSelenium03.quyentx.NewTour.checkRegisterValid(NewTour.java:96)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+Caused by: org.openqa.selenium.WebDriverException: Element must be user-editable in order to clear it.
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'quyentx-w7', ip: '192.168.0.38', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: driver.version: unknown
+	at <anonymous class>.bot.Error(file:///C:/Users/quyentx/AppData/Local/Temp/anonymous6954286156838467855webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:679)
+	at <anonymous class>.bot.action.clear(file:///C:/Users/quyentx/AppData/Local/Temp/anonymous6954286156838467855webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11638)
+	at <anonymous class>.WebElement.clearElement(file:///C:/Users/quyentx/AppData/Local/Temp/anonymous6954286156838467855webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12089)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/quyentx/AppData/Local/Temp/anonymous6954286156838467855webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12614)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/quyentx/AppData/Local/Temp/anonymous6954286156838467855webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12619)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/quyentx/AppData/Local/Temp/anonymous6954286156838467855webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12561)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkRegisterValid -->
-        <test-method name="afterMethod" test-instance-name="" signature="afterMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest@1464ce8]" is-config="true" status="PASS" duration-ms="0" finished-at="2016-02-24T16:35:27Z" started-at="2016-02-24T16:35:27Z" description="checkBook">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.NewTour@1d47554]" name="afterMethod" is-config="true" duration-ms="0" started-at="2016-02-26T10:09:22Z" description="checkBook" finished-at="2016-02-26T10:09:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method name="beforeMethod" test-instance-name="" signature="beforeMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest@1464ce8]" is-config="true" status="PASS" duration-ms="0" finished-at="2016-02-24T16:35:27Z" started-at="2016-02-24T16:35:27Z" description="checkBook">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.NewTour@1d47554]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2016-02-26T10:09:22Z" description="checkBook" finished-at="2016-02-26T10:09:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="checkSelectFlightValid()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest@1464ce8]" test-instance-name="" name="checkSelectFlightValid" duration-ms="9342" started-at="2016-02-24T16:35:27Z" finished-at="2016-02-24T16:35:36Z">
+        <test-method status="PASS" signature="checkSelectFlightValid()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.NewTour@1d47554]" name="checkSelectFlightValid" duration-ms="10035" started-at="2016-02-26T10:09:22Z" finished-at="2016-02-26T10:09:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkSelectFlightValid -->
-        <test-method name="beforeMethod" test-instance-name="" signature="beforeMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest@1464ce8]" is-config="true" status="PASS" duration-ms="0" finished-at="2016-02-24T16:35:36Z" started-at="2016-02-24T16:35:36Z" description="checkBook">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="findFlight()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest@1464ce8]" test-instance-name="" name="findFlight" duration-ms="7548" started-at="2016-02-24T16:35:36Z" finished-at="2016-02-24T16:35:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- findFlight -->
-        <test-method name="afterMethod" test-instance-name="" signature="afterMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest@1464ce8]" is-config="true" status="PASS" duration-ms="0" finished-at="2016-02-24T16:35:36Z" started-at="2016-02-24T16:35:36Z" description="checkBook">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.NewTour@1d47554]" name="afterMethod" is-config="true" duration-ms="0" started-at="2016-02-26T10:09:32Z" description="checkBook" finished-at="2016-02-26T10:09:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method name="beforeMethod" test-instance-name="" signature="beforeMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest@1464ce8]" is-config="true" status="PASS" duration-ms="0" finished-at="2016-02-24T16:35:44Z" started-at="2016-02-24T16:35:44Z" description="checkBook">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest@1464ce8]" test-instance-name="" name="login" duration-ms="4760" started-at="2016-02-24T16:35:44Z" finished-at="2016-02-24T16:35:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method name="afterMethod" test-instance-name="" signature="afterMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest@1464ce8]" is-config="true" status="PASS" duration-ms="0" finished-at="2016-02-24T16:35:44Z" started-at="2016-02-24T16:35:44Z" description="checkBook">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method name="afterMethod" test-instance-name="" signature="afterMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest@1464ce8]" is-config="true" status="PASS" duration-ms="0" finished-at="2016-02-24T16:35:48Z" started-at="2016-02-24T16:35:48Z" description="checkBook">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="selectFlight()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest@1464ce8]" test-instance-name="" name="selectFlight" duration-ms="9172" started-at="2016-02-24T16:35:48Z" finished-at="2016-02-24T16:35:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectFlight -->
-        <test-method name="beforeMethod" test-instance-name="" signature="beforeMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest@1464ce8]" is-config="true" status="PASS" duration-ms="0" finished-at="2016-02-24T16:35:48Z" started-at="2016-02-24T16:35:48Z" description="checkBook">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method name="afterMethod" test-instance-name="" signature="afterMethod()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest@1464ce8]" is-config="true" status="PASS" duration-ms="0" finished-at="2016-02-24T16:35:57Z" started-at="2016-02-24T16:35:57Z" description="checkBook">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest@1464ce8]" test-instance-name="" name="afterClass" is-config="true" duration-ms="1" started-at="2016-02-24T16:35:57Z" finished-at="2016-02-24T16:35:57Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.vsii.tsc.TSCSelenium03.quyentx.NewTour@1d47554]" name="afterClass" is-config="true" duration-ms="18" started-at="2016-02-26T10:09:32Z" finished-at="2016-02-26T10:09:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.vsii.tsc.TSCSelenium03.quyentx.NewTour -->
+    </test> <!-- NewTour -->
+  </suite> <!-- Suite -->
 </testng-results>

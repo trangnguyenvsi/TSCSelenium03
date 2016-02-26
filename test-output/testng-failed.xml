@@ -1,25 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test verbose="2" name="Default test">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="NewTour">
     <classes>
-      <class name="com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest"/>
+      <class name="com.vsii.tsc.TSCSelenium03.quyentx.NewTour"/>
+      <class name="com.vsii.tsc.TSCSelenium03.AppTest"/>
     </classes>
-  </test> <!-- Default test -->
-  <test name="Default test(failed)">
+  </test> <!-- NewTour -->
+  <test name="NewTour(failed)">
     <classes>
-      <class name="com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest">
+      <class name="com.vsii.tsc.TSCSelenium03.quyentx.NewTour">
         <methods>
-          <include name="afterMethod"/>
-          <include name="checkFindFlight" invocation-numbers="0"/>
-          <include name="checkLogin" invocation-numbers="0 1 2"/>
-          <include name="checkBookFlight" invocation-numbers="0 1"/>
-          <include name="testSetup"/>
-          <include name="afterClass"/>
+          <include name="checkRegisterValid"/>
           <include name="checkRegister" invocation-numbers="0"/>
           <include name="beforeMethod"/>
+          <include name="getBrowser"/>
+          <include name="checkBookFlight" invocation-numbers="0 1"/>
+          <include name="afterClass"/>
+          <include name="checkFindFlight" invocation-numbers="0"/>
+          <include name="checkLogin" invocation-numbers="0 1 2"/>
+          <include name="afterMethod"/>
         </methods>
-      </class> <!-- com.vsii.tsc.TSCSelenium03.quyentx.MyNewTourTest -->
+      </class> <!-- com.vsii.tsc.TSCSelenium03.quyentx.NewTour -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- NewTour(failed) -->
+</suite> <!-- Failed suite [Suite] -->
