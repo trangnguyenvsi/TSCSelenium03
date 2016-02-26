@@ -65,7 +65,7 @@ public class BaseMethod {
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		}
 	}
-	@Test
+	@Test(dataProvider = "login")
 	public void login(String name, String password) {
 		driver.get(baseUrl+ "/mercurysignon.php");
 		driver.findElement(By.name("userName")).clear();

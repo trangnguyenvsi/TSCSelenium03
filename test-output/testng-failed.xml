@@ -1,27 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="NewTour">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test verbose="2" name="Default test">
     <classes>
-      <class name="com.vsii.tsc.TSCSelenium03.quyentx.NewTour"/>
-      <class name="com.vsii.tsc.TSCSelenium03.AppTest"/>
+      <class name="com.vsii.tsc.TSCSelenium03.lannt.BaseMethod"/>
     </classes>
-  </test> <!-- NewTour -->
-  <test name="NewTour(failed)">
+  </test> <!-- Default test -->
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.vsii.tsc.TSCSelenium03.quyentx.NewTour">
+      <class name="com.vsii.tsc.TSCSelenium03.lannt.BaseMethod">
         <methods>
-          <include name="checkRegisterValid"/>
-          <include name="checkRegister" invocation-numbers="0"/>
-          <include name="beforeMethod"/>
-          <include name="getBrowser"/>
-          <include name="checkBookFlight" invocation-numbers="0 1"/>
-          <include name="afterClass"/>
-          <include name="checkFindFlight" invocation-numbers="0"/>
-          <include name="checkLogin" invocation-numbers="0 1 2"/>
-          <include name="afterMethod"/>
+          <include name="beforeClass"/>
+          <include name="login" invocation-numbers="0 1"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.vsii.tsc.TSCSelenium03.quyentx.NewTour -->
+      </class> <!-- com.vsii.tsc.TSCSelenium03.lannt.BaseMethod -->
     </classes>
-  </test> <!-- NewTour(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
