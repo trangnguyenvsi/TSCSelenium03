@@ -7,7 +7,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
-@SuppressWarnings("unused")
+//@SuppressWarnings("unused")
 
 public class checkRegis extends BaseMethod  {
 	@Test

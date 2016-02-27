@@ -69,6 +69,7 @@ public class BaseMethod {
 	
 	public void login(String name, String password) {
 		driver.get(baseUrl+ "/mercurysignon.php");
+//		driver.get(baseUrl);
 		driver.findElement(By.name("userName")).clear();
 		driver.findElement(By.name("userName")).sendKeys(name);
 		driver.findElement(By.name("password")).clear();
@@ -101,7 +102,7 @@ public class BaseMethod {
 	
 	@DataProvider
 	public Object[][] getData() throws IOException{
-		String[][] object = new String[4][2];
+		String[][] object = new String[1][2];
 		FileInputStream fileInputStream = new FileInputStream("D:\\LANNT\\Data123.xls");
         POIFSFileSystem fsFileSystem = new POIFSFileSystem(fileInputStream);
         HSSFWorkbook workBook2 = new HSSFWorkbook(fsFileSystem);
