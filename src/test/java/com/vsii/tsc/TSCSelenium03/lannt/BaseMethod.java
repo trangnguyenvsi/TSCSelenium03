@@ -27,7 +27,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
 
-@SuppressWarnings("unused")
+
 public class BaseMethod {
 	protected Properties p;
 	protected WebDriver driver;
@@ -54,7 +54,7 @@ public class BaseMethod {
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		}
 		else if (browser.equals("chrome") || browser.equals("Chrome")) {
-			System.setProperty("webdriver.chrome.driver", "D:\\Tài Liệu Dự Án\\Selenium\\Setup\\chromedriver_win32\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "D:\\LANNT\\Setup\\chromedriver_win32\\chromedriver.exe");
 			driver = new ChromeDriver();
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -65,7 +65,8 @@ public class BaseMethod {
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		}
 	}
-	@Test(dataProvider = "login")
+
+	
 	public void login(String name, String password) {
 		driver.get(baseUrl+ "/mercurysignon.php");
 		driver.findElement(By.name("userName")).clear();
@@ -101,7 +102,7 @@ public class BaseMethod {
 	@DataProvider
 	public Object[][] getData() throws IOException{
 		String[][] object = new String[4][2];
-		FileInputStream fileInputStream = new FileInputStream("./DataTest/data.xls");
+		FileInputStream fileInputStream = new FileInputStream("D:\\LANNT\\Data123.xls");
         POIFSFileSystem fsFileSystem = new POIFSFileSystem(fileInputStream);
         HSSFWorkbook workBook2 = new HSSFWorkbook(fsFileSystem);
         HSSFSheet sheet = workBook2.getSheetAt(0);

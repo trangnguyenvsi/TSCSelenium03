@@ -1,24 +1,24 @@
 package com.vsii.tsc.TSCSelenium03.lannt;
 
 import org.testng.annotations.Test;
-import org.testng.annotations.Test;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 
-@SuppressWarnings("unused")
 
 public class CheckLogin extends BaseMethod {
 	
 	@Test(dataProvider="getData")
 	public void loginFail(String username, String password) throws Exception {
+		System.out.println("ndjfdk");
 		login(username, password);
+		System.out.println("àhgdajfh");
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.findElement(By.xpath(".//*[contains(text(),'Enter your user information to access')]"));
 		Assert.assertEquals(driver.findElement(By.xpath(".//*[contains(text(),'Enter your user information to access')]")).getText(), "Welcome back to Mercury Tours! Enter your user information to access the member-only areas of this site. If you don't have a log-in, please fill out the registration form.");
 	}
 
-	@Test
+	//@Test
 	public void loginSucc() throws Exception {
 		login("tutorial", "tutorial");
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
